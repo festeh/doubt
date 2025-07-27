@@ -1,0 +1,20 @@
+{
+  // Path to the executable to spawn
+  "executable_path": "<path>",
+  
+  // List of commands to execute after spawning
+  "commands": [
+    {
+      "type": "sleep",
+      "sleep": {
+        "duration": 100  // milliseconds
+      }
+    },
+    {
+      "type": "keypress", 
+      "keypress": {
+        "key": "ctrl-c"  // supported: ctrl-c, enter, escape, tab, space, or any string
+      }
+    }
+  ]
+}
